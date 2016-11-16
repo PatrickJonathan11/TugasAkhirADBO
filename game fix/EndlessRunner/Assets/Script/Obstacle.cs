@@ -3,15 +3,29 @@ using System.Collections;
 
 public class Obstacle : MonoBehaviour {
 
-	public GameObject[] obstacle;
+	private DeadAndRestart deadAndRestart;
 
-	// Use this for initialization
-	void Start () {
-		
+	//private GameObject destroyPoint;
+
+	void Start(){
+		this.deadAndRestart = FindObjectOfType<DeadAndRestart> ();
+		//this.destroyPoint =  GameObject.Find ("DestroyPoint");
 	}
-	
-	// Update is called once per frame
+
+	void OnCollisionEnter2D (Collision2D other){
+		if (other.gameObject.tag == "Player") {
+			deadAndRestart.RestartGame ();
+		}
+	}
+
+	/*
 	void Update () {
-	
+		this.destroyObject ();
 	}
+	
+	public void destroyObject(){
+		if (transform.position.x < destroyPoint.transform.position.x) {
+			Destroy (gameObject);	
+		}
+	}*/
 }

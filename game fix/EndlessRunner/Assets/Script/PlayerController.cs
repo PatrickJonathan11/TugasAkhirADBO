@@ -14,49 +14,28 @@ public class PlayerController : MonoBehaviour {
 	private Rigidbody2D myRigidBody;
 
 	public bool grounded;
+	public bool slide;
 	public LayerMask whatIsGround;
 
 	private Collider2D myCollider;
-
 	private Animator myAnimator;
+
+	private BoxCollider2D boxCol;
+	private Vector3 ukuranAwal;
 
 	// Use this for initialization
 	void Start () {
 		myRigidBody = GetComponent<Rigidbody2D> ();
-
 		myCollider = GetComponent<Collider2D> ();
-
 		myAnimator = GetComponent<Animator> ();
 
 		nambahJarak = jarakTempuh;
-
 		jumpHoldTimeCounter = jumpHoldTime;
-	}
 
-	//mengatur kecepatan karakter
-	void speed(){
-		moveSpeed = moveSpeed * speedMultiplier;
-		nambahJarak += jarakTempuh;
-		jarakTempuh = jarakTempuh * speedMultiplier;
+		boxCol = GetComponent<BoxCollider2D>();
+		ukuranAwal = boxCol.size;
 	}
-
-	//mengatur cara karakter melompat
-	void jump(){
-		myRigidBody.velocity = new Vector2 (myRigidBody.velocity.x, jumpForce);
-		jumpHoldTimeCounter=jumpHoldTime;
-	}
-
-	//mengatur lama melompat jika tombol di tahan
-	void jumpHold(){
-		myRigidBody.velocity = new Vector2 (myRigidBody.velocity.x, jumpForce);
-		jumpHoldTimeCounter -= Time.deltaTime;
-	}
-
-	//mengatur agar tidak dapat melompat lagi jika tombol di lepas
-	void jumpRelease(){
-		jumpHoldTimeCounter = 0;
-	}
-
+		
 	// Update is called once per frame
 	void Update () {
 		grounded = Physics2D.IsTouchingLayers (myCollider, whatIsGround);
@@ -80,8 +59,47 @@ public class PlayerController : MonoBehaviour {
 		if (Input.GetKeyUp (KeyCode.UpArrow) || Input.GetKeyUp (KeyCode.Space)) {
 			this.jumpRelease ();
 		}
+
+		if (Input.GetKey ("down")) {
+				boxCol.size = new Vector3 (0.5f, 0.5f, 0);
+				slide = true;
+		} else {
+			boxCol.size = ukuranAwal;
+			slide = false;
+		}
 		myAnimator.SetFloat ("Speed", myRigidBody.velocity.x);
 		myAnimator.SetBool ("Grounded", grounded);
+		myAnimator.SetBool ("Slide", slide);
 	}
 
+	//mengatur kecepatan karakter
+	void speed(){
+		moveSpeed = moveSpeed * speedMultiplier;
+		nambahJarak += jarakTempuh;
+		jarakTempuh = jarakTempuh * speedMultiplier;
+	}
+
+	//mengatur cara karakter melompat
+	private void jump(){
+		myRigidBody.velocity = new Vector2 (myRigidBody.velocity.x, jumpForce);
+		jumpHoldTimeCounter=jumpHoldTime;
+	}
+
+	//mengatur lama melompat jika tombol di tahan
+	void jumpHold(){
+		myRigidBody.velocity = new Vector2 (myRigidBody.velocity.x, jumpForce);
+		jumpHoldTimeCounter -= Time.deltaTime;
+	}
+
+	//mengatur agar tidak dapat melompat lagi jika tombol di lepas
+	void jumpRelease(){
+		jumpHoldTimeCounter = 0;
+	}
+
+	public void setToStart(){
+		this.moveSpeed = 10;
+		this.jarakTempuh = 35;
+		this.boxCol.size = ukuranAwal;
+		this.Start();
+	}
 }

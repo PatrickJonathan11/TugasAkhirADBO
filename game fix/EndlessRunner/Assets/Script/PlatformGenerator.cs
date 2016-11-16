@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlatformGenerator : MonoBehaviour {
+public class PlatformGenerator : MonoBehaviour{
 	public GameObject thePlatform;
 	public Transform generationPoint;
 
@@ -11,6 +11,7 @@ public class PlatformGenerator : MonoBehaviour {
 	void Start () {
 		platformWidth = thePlatform.GetComponent<BoxCollider2D> ().size.x;
 		transform.position = new Vector3 (platformWidth-8.11f,thePlatform.transform.position.y,transform.position.z);
+
 	}
 
 	// Update is called once per frame
@@ -26,4 +27,5 @@ public class PlatformGenerator : MonoBehaviour {
 
 		Instantiate (thePlatform, transform.position, transform.rotation);
 	}
+
 }
