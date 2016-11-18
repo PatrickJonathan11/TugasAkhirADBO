@@ -12,6 +12,12 @@ public class Obstacle : MonoBehaviour {
 		//this.destroyPoint =  GameObject.Find ("DestroyPoint");
 	}
 
+	/// <summary>
+	/// method ini dipanggil jika kedua collider(player dan obstacle) bertemu dan
+	/// isTrigger dalam keadaan false
+	/// akan memindahkan kita ke layar dead menu
+	/// </summary>
+	/// <param name="other">Other.</param>
 	void OnCollisionEnter2D (Collision2D other){
 		if (other.gameObject.tag == "Player") {
 			deadAndRestart.RestartGame ();

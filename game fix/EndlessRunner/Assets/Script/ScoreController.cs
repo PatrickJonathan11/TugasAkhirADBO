@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class ScoreController : MonoBehaviour {
 
-	//bwt score
+	//untuk score
 	public int score;
 	public int highScore;
 	public Text scoreText;
@@ -13,6 +13,9 @@ public class ScoreController : MonoBehaviour {
 	public PlayerController player;
 
 	// Use this for initialization
+	/// <summary>
+	/// men-set score dan highscore di awal permainan
+	/// </summary>
 	void Start () {
 		this.score =0;
 		int oldHighScore = PlayerPrefs.GetInt ("HighScore");
@@ -23,10 +26,16 @@ public class ScoreController : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
+	/// <summary>
+	/// memanggil method incScore
+	/// </summary>
 	void Update () {
 		this.incScore ();
 	}
 
+	/// <summary>
+	/// method ini digunakan untuk menambah skor saat bermain
+	/// </summary>
 	void incScore(){
 		//score
 		if(score > highScore){

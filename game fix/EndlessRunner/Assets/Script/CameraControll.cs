@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿
+using UnityEngine;
 using System.Collections;
 
 public class CameraControll : MonoBehaviour {
@@ -7,13 +8,16 @@ public class CameraControll : MonoBehaviour {
 	private Vector3 lastPlayerPosition;
 	private float distanceToMove;
 
-	// Use this for initialization
+	/// Use this for initialization
 	void Start () {
 		thePlayer = FindObjectOfType<PlayerController> ();
 		lastPlayerPosition = thePlayer.transform.position;
 	}
 	
-	// Update is called once per frame
+	/// <summary>
+	///  method ini akan membuat kamera mengikuti gerakan player saat bergerak dan akan tetap stibil di tengah
+	///  walaupun player melompat
+	/// </summary>
 	void Update () {
 		distanceToMove = thePlayer.transform.position.x - lastPlayerPosition.x;
 

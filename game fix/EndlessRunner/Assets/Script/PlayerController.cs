@@ -72,30 +72,41 @@ public class PlayerController : MonoBehaviour {
 		myAnimator.SetBool ("Slide", slide);
 	}
 
-	//mengatur kecepatan karakter
+	/// <summary>
+	/// mengatur kecepatan karakter
+	/// </summary>
 	void speed(){
 		moveSpeed = moveSpeed * speedMultiplier;
 		nambahJarak += jarakTempuh;
 		jarakTempuh = jarakTempuh * speedMultiplier;
 	}
 
-	//mengatur cara karakter melompat
+	/// <summary>
+	/// mengatur cara karakter melompat
+	/// </summary>
 	private void jump(){
 		myRigidBody.velocity = new Vector2 (myRigidBody.velocity.x, jumpForce);
 		jumpHoldTimeCounter=jumpHoldTime;
 	}
 
-	//mengatur lama melompat jika tombol di tahan
+	/// <summary>
+	/// mengatur lama melompat jika tombol di tahan
+	/// </summary>
 	void jumpHold(){
 		myRigidBody.velocity = new Vector2 (myRigidBody.velocity.x, jumpForce);
 		jumpHoldTimeCounter -= Time.deltaTime;
 	}
 
-	//mengatur agar tidak dapat melompat lagi jika tombol di lepas
+	/// <summary>
+	/// mengatur agar tidak dapat melompat lagi jika tombol di lepas
+	/// </summary>
 	void jumpRelease(){
 		jumpHoldTimeCounter = 0;
 	}
 
+	/// <summary>
+	/// method ini bekerja seperti method start , tetapi digunakan saat merestart game dalam dead menu
+	/// </summary>
 	public void setToStart(){
 		this.moveSpeed = 10;
 		this.jarakTempuh = 35;
