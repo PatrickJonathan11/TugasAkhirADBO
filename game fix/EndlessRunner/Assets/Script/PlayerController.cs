@@ -23,6 +23,8 @@ public class PlayerController : MonoBehaviour {
 	private BoxCollider2D boxCol;
 	private Vector3 ukuranAwal;
 
+	public AudioSource jumpSound;
+
 	// Use this for initialization
 	void Start () {
 		myRigidBody = GetComponent<Rigidbody2D> ();
@@ -86,6 +88,7 @@ public class PlayerController : MonoBehaviour {
 	/// </summary>
 	private void jump(){
 		myRigidBody.velocity = new Vector2 (myRigidBody.velocity.x, jumpForce);
+		jumpSound.Play ();
 		jumpHoldTimeCounter=jumpHoldTime;
 	}
 

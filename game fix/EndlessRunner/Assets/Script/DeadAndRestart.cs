@@ -15,6 +15,8 @@ public class DeadAndRestart : MonoBehaviour {
 
 	public DeadMenu deadMenuScreen;
 
+	public AudioSource deathSoundEffect;
+
 	// Use this for initialization
 	/// <summary>
 	/// method ini akan menyimpan letak awal platform dan player;
@@ -29,7 +31,8 @@ public class DeadAndRestart : MonoBehaviour {
 	/// method ini akan menghilankan player saat mati sehingga tidak ada dalam platform
 	/// dan saat bersamaan akan memanggil tampilan dari DeadMenu
 	/// </summary>
-	public void RestartGame(){
+	public void killThePlayer(){
+		deathSoundEffect.Play ();
 		thePlayer.gameObject.SetActive (false);
 		deadMenuScreen.gameObject.SetActive(true);
 
@@ -49,6 +52,9 @@ public class DeadAndRestart : MonoBehaviour {
 		platformGenerator.position = platformStartPoint;
 		obsController.reStart ();
 		thePlayer.setToStart ();
+		if(deathSoundEffect.isPlaying){
+			deathSoundEffect.Stop();
+		}
 		thePlayer.gameObject.SetActive (true);
 	}
 }

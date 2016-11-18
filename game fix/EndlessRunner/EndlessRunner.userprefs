@@ -2,18 +2,8 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\DeadAndRestart.cs">
     <Files>
-      <File FileName="Assets\Script\ObjectDestroyer.cs" Line="1" Column="1" />
-      <File FileName="Assets\Script\PlatformGenerator.cs" Line="1" Column="1" />
-      <File FileName="Assets\Script\MainMenu.cs" Line="1" Column="1" />
-      <File FileName="Assets\Script\Obstacle.cs" Line="1" Column="1" />
-      <File FileName="Assets\Script\DeadAndRestart.cs" Line="39" Column="6" />
-      <File FileName="Assets\Script\ObstacleController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Script\CameraControll.cs" Line="1" Column="1" />
-      <File FileName="Assets\Script\DeadMenu.cs" Line="1" Column="1" />
-      <File FileName="Assets\Script\Destroyer.cs" Line="1" Column="1" />
-      <File FileName="Assets\Script\PlayerController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Script\ScoreController.cs" Line="1" Column="1" />
-      <File FileName="Assets\scr.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\DeadAndRestart.cs" Line="56" Column="27" />
+      <File FileName="Assets\Script\Obstacle.cs" Line="23" Column="32" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

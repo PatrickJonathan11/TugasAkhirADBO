@@ -20,7 +20,7 @@ public class Obstacle : MonoBehaviour {
 	/// <param name="other">Other.</param>
 	void OnCollisionEnter2D (Collision2D other){
 		if (other.gameObject.tag == "Player") {
-			deadAndRestart.RestartGame ();
+			deadAndRestart.killThePlayer ();
 		}
 	}
 
