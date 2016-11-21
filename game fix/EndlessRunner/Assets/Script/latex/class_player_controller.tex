@@ -1,0 +1,142 @@
+\hypertarget{class_player_controller}{}\section{Player\+Controller Class Reference}
+\label{class_player_controller}\index{Player\+Controller@{Player\+Controller}}
+Inheritance diagram for Player\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_player_controller}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_player_controller_adb52e7f8ab39c74e1922393d5015a70a}{set\+To\+Start} ()
+\begin{DoxyCompactList}\small\item\em method ini bekerja seperti method start , tetapi digunakan saat merestart game dalam dead menu \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_player_controller_a7c109871eba0057fd2aa1856522a346d}{}\label{class_player_controller_a7c109871eba0057fd2aa1856522a346d} 
+float {\bfseries jump\+Force}
+\item 
+\hypertarget{class_player_controller_a365831d3d6fc1d27a30086ad467305a1}{}\label{class_player_controller_a365831d3d6fc1d27a30086ad467305a1} 
+float {\bfseries jump\+Hold\+Time}
+\item 
+\hypertarget{class_player_controller_abb12e85ca1b12efdbc8684bff2e19c4c}{}\label{class_player_controller_abb12e85ca1b12efdbc8684bff2e19c4c} 
+float {\bfseries move\+Speed}
+\item 
+\hypertarget{class_player_controller_a15aeb9e2671ba8dc7124be81397f84be}{}\label{class_player_controller_a15aeb9e2671ba8dc7124be81397f84be} 
+float {\bfseries speed\+Multiplier}
+\item 
+\hypertarget{class_player_controller_a23820dab3461bec7fe783e801c27c8ff}{}\label{class_player_controller_a23820dab3461bec7fe783e801c27c8ff} 
+float {\bfseries jarak\+Tempuh}
+\item 
+\hypertarget{class_player_controller_a1810294c934464cd555eec1107d2379b}{}\label{class_player_controller_a1810294c934464cd555eec1107d2379b} 
+bool {\bfseries grounded}
+\item 
+\hypertarget{class_player_controller_a63d4bd8d38ba41b7aa45833104c11813}{}\label{class_player_controller_a63d4bd8d38ba41b7aa45833104c11813} 
+bool {\bfseries slide}
+\item 
+\hypertarget{class_player_controller_a5280def315a8ef1d16620890a1523273}{}\label{class_player_controller_a5280def315a8ef1d16620890a1523273} 
+Layer\+Mask {\bfseries what\+Is\+Ground}
+\item 
+\hypertarget{class_player_controller_ab1e1eba1b79ab5d5771099e67b0057fb}{}\label{class_player_controller_ab1e1eba1b79ab5d5771099e67b0057fb} 
+Audio\+Source {\bfseries jump\+Sound}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_player_controller_ae1117d9c4da3193181cddad2c814e467}{}\label{class_player_controller_ae1117d9c4da3193181cddad2c814e467} 
+void {\bfseries Start} ()
+\item 
+\hypertarget{class_player_controller_ae8bc83dffb99867a04be016473ed2c43}{}\label{class_player_controller_ae8bc83dffb99867a04be016473ed2c43} 
+void {\bfseries Update} ()
+\item 
+void \hyperlink{class_player_controller_accbeb6b75b9f6067679b960a91581de6}{speed} ()
+\begin{DoxyCompactList}\small\item\em mengatur kecepatan karakter \end{DoxyCompactList}\item 
+void \hyperlink{class_player_controller_a413e8e34033169093b21b38bf6bd0b34}{jump} ()
+\begin{DoxyCompactList}\small\item\em mengatur cara karakter melompat \end{DoxyCompactList}\item 
+void \hyperlink{class_player_controller_afd5b28f0a9018e11fc879c93107c7a37}{jump\+Hold} ()
+\begin{DoxyCompactList}\small\item\em mengatur lama melompat jika tombol di tahan \end{DoxyCompactList}\item 
+void \hyperlink{class_player_controller_af65ea7266683911055939bfad8c4248b}{jump\+Release} ()
+\begin{DoxyCompactList}\small\item\em mengatur agar tidak dapat melompat lagi jika tombol di lepas \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_player_controller_a964dd786d816edf28dfb22e076e7fb6e}{}\label{class_player_controller_a964dd786d816edf28dfb22e076e7fb6e} 
+float {\bfseries jump\+Hold\+Time\+Counter}
+\item 
+\hypertarget{class_player_controller_a1b529005d052b11fe8843e3fa6de3a2a}{}\label{class_player_controller_a1b529005d052b11fe8843e3fa6de3a2a} 
+float {\bfseries nambah\+Jarak}
+\item 
+\hypertarget{class_player_controller_ae7c227462646c52ac0b35517303ea57d}{}\label{class_player_controller_ae7c227462646c52ac0b35517303ea57d} 
+Rigidbody2D {\bfseries my\+Rigid\+Body}
+\item 
+\hypertarget{class_player_controller_a0e793baf5b00ac0d6bcf367060db5f55}{}\label{class_player_controller_a0e793baf5b00ac0d6bcf367060db5f55} 
+Collider2D {\bfseries my\+Collider}
+\item 
+\hypertarget{class_player_controller_a34fe46e66072a17354236ce4c9909767}{}\label{class_player_controller_a34fe46e66072a17354236ce4c9909767} 
+Animator {\bfseries my\+Animator}
+\item 
+\hypertarget{class_player_controller_a51abe7ff34134e22526284c8492ac2af}{}\label{class_player_controller_a51abe7ff34134e22526284c8492ac2af} 
+Box\+Collider2D {\bfseries box\+Col}
+\item 
+\hypertarget{class_player_controller_abe1551a2d9b41ba6c7ce2895867eea18}{}\label{class_player_controller_abe1551a2d9b41ba6c7ce2895867eea18} 
+Vector3 {\bfseries ukuran\+Awal}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_player_controller_a413e8e34033169093b21b38bf6bd0b34}{}\label{class_player_controller_a413e8e34033169093b21b38bf6bd0b34} 
+\index{Player\+Controller@{Player\+Controller}!jump@{jump}}
+\index{jump@{jump}!Player\+Controller@{Player\+Controller}}
+\subsubsection{\texorpdfstring{jump()}{jump()}}
+{\footnotesize\ttfamily void Player\+Controller.\+jump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+mengatur cara karakter melompat 
+
+\hypertarget{class_player_controller_afd5b28f0a9018e11fc879c93107c7a37}{}\label{class_player_controller_afd5b28f0a9018e11fc879c93107c7a37} 
+\index{Player\+Controller@{Player\+Controller}!jump\+Hold@{jump\+Hold}}
+\index{jump\+Hold@{jump\+Hold}!Player\+Controller@{Player\+Controller}}
+\subsubsection{\texorpdfstring{jump\+Hold()}{jumpHold()}}
+{\footnotesize\ttfamily void Player\+Controller.\+jump\+Hold (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+mengatur lama melompat jika tombol di tahan 
+
+\hypertarget{class_player_controller_af65ea7266683911055939bfad8c4248b}{}\label{class_player_controller_af65ea7266683911055939bfad8c4248b} 
+\index{Player\+Controller@{Player\+Controller}!jump\+Release@{jump\+Release}}
+\index{jump\+Release@{jump\+Release}!Player\+Controller@{Player\+Controller}}
+\subsubsection{\texorpdfstring{jump\+Release()}{jumpRelease()}}
+{\footnotesize\ttfamily void Player\+Controller.\+jump\+Release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+mengatur agar tidak dapat melompat lagi jika tombol di lepas 
+
+\hypertarget{class_player_controller_adb52e7f8ab39c74e1922393d5015a70a}{}\label{class_player_controller_adb52e7f8ab39c74e1922393d5015a70a} 
+\index{Player\+Controller@{Player\+Controller}!set\+To\+Start@{set\+To\+Start}}
+\index{set\+To\+Start@{set\+To\+Start}!Player\+Controller@{Player\+Controller}}
+\subsubsection{\texorpdfstring{set\+To\+Start()}{setToStart()}}
+{\footnotesize\ttfamily void Player\+Controller.\+set\+To\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+method ini bekerja seperti method start , tetapi digunakan saat merestart game dalam dead menu 
+
+\hypertarget{class_player_controller_accbeb6b75b9f6067679b960a91581de6}{}\label{class_player_controller_accbeb6b75b9f6067679b960a91581de6} 
+\index{Player\+Controller@{Player\+Controller}!speed@{speed}}
+\index{speed@{speed}!Player\+Controller@{Player\+Controller}}
+\subsubsection{\texorpdfstring{speed()}{speed()}}
+{\footnotesize\ttfamily void Player\+Controller.\+speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+mengatur kecepatan karakter 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Irvan/\+Documents/\+Git\+Hub/\+Tugas\+Akhir\+A\+D\+B\+O/game fix/\+Endless\+Runner/\+Assets/\+Script/Player\+Controller.\+cs\end{DoxyCompactItemize}

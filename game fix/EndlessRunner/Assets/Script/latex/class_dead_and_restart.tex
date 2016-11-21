@@ -1,0 +1,88 @@
+\hypertarget{class_dead_and_restart}{}\section{Dead\+And\+Restart Class Reference}
+\label{class_dead_and_restart}\index{Dead\+And\+Restart@{Dead\+And\+Restart}}
+Inheritance diagram for Dead\+And\+Restart\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_dead_and_restart}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_dead_and_restart_a051bee469f462b949f4ce83791c2294f}{kill\+The\+Player} ()
+\begin{DoxyCompactList}\small\item\em method ini akan menghilankan player saat mati sehingga tidak ada dalam platform dan saat bersamaan akan memanggil tampilan dari \hyperlink{class_dead_menu}{Dead\+Menu} \end{DoxyCompactList}\item 
+void \hyperlink{class_dead_and_restart_a38d762c09b1bcaa35a0a2cb0807c38f3}{reset} ()
+\begin{DoxyCompactList}\small\item\em saat dipanggil akan \hyperlink{class_dead_menu}{Dead\+Menu} akan ditutup dan akan mengulang semua arena dari awal \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_dead_and_restart_a7700d89251ec094e373a0fe7e61f09f9}{}\label{class_dead_and_restart_a7700d89251ec094e373a0fe7e61f09f9} 
+Transform {\bfseries platform\+Generator}
+\item 
+\hypertarget{class_dead_and_restart_aba66184a8d37c05c78f86e2c83628eae}{}\label{class_dead_and_restart_aba66184a8d37c05c78f86e2c83628eae} 
+\hyperlink{class_player_controller}{Player\+Controller} {\bfseries the\+Player}
+\item 
+\hypertarget{class_dead_and_restart_a855a9b0c48730b94b800589d74d887ae}{}\label{class_dead_and_restart_a855a9b0c48730b94b800589d74d887ae} 
+\hyperlink{class_dead_menu}{Dead\+Menu} {\bfseries dead\+Menu\+Screen}
+\item 
+\hypertarget{class_dead_and_restart_a68ea47d86cdc8884858f2951ae90c063}{}\label{class_dead_and_restart_a68ea47d86cdc8884858f2951ae90c063} 
+Audio\+Source {\bfseries death\+Sound\+Effect}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_dead_and_restart_ace49e4505012656acdfdf947e22cfaab}{Start} ()
+\begin{DoxyCompactList}\small\item\em method ini akan menyimpan letak awal platform dan player; \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_dead_and_restart_ad88cf9f54b6f7ab52dcfb9231c2e881d}{}\label{class_dead_and_restart_ad88cf9f54b6f7ab52dcfb9231c2e881d} 
+Vector3 {\bfseries platform\+Start\+Point}
+\item 
+\hypertarget{class_dead_and_restart_a5fc332be57d38f79d00e1f59c3e1fec0}{}\label{class_dead_and_restart_a5fc332be57d38f79d00e1f59c3e1fec0} 
+Vector3 {\bfseries player\+Start\+Point}
+\item 
+\hypertarget{class_dead_and_restart_add548a0fec72d4ddd716e4769f99ecd7}{}\label{class_dead_and_restart_add548a0fec72d4ddd716e4769f99ecd7} 
+\hyperlink{class_obstacle_controller}{Obstacle\+Controller} {\bfseries obs\+Controller}
+\item 
+\hypertarget{class_dead_and_restart_ad4a397b1236d0a27ad6b96daf7421064}{}\label{class_dead_and_restart_ad4a397b1236d0a27ad6b96daf7421064} 
+\hyperlink{class_destroyer}{Destroyer} \mbox{[}$\,$\mbox{]} {\bfseries list}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_dead_and_restart_a051bee469f462b949f4ce83791c2294f}{}\label{class_dead_and_restart_a051bee469f462b949f4ce83791c2294f} 
+\index{Dead\+And\+Restart@{Dead\+And\+Restart}!kill\+The\+Player@{kill\+The\+Player}}
+\index{kill\+The\+Player@{kill\+The\+Player}!Dead\+And\+Restart@{Dead\+And\+Restart}}
+\subsubsection{\texorpdfstring{kill\+The\+Player()}{killThePlayer()}}
+{\footnotesize\ttfamily void Dead\+And\+Restart.\+kill\+The\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+method ini akan menghilankan player saat mati sehingga tidak ada dalam platform dan saat bersamaan akan memanggil tampilan dari \hyperlink{class_dead_menu}{Dead\+Menu} 
+
+\hypertarget{class_dead_and_restart_a38d762c09b1bcaa35a0a2cb0807c38f3}{}\label{class_dead_and_restart_a38d762c09b1bcaa35a0a2cb0807c38f3} 
+\index{Dead\+And\+Restart@{Dead\+And\+Restart}!reset@{reset}}
+\index{reset@{reset}!Dead\+And\+Restart@{Dead\+And\+Restart}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Dead\+And\+Restart.\+reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+saat dipanggil akan \hyperlink{class_dead_menu}{Dead\+Menu} akan ditutup dan akan mengulang semua arena dari awal 
+
+\hypertarget{class_dead_and_restart_ace49e4505012656acdfdf947e22cfaab}{}\label{class_dead_and_restart_ace49e4505012656acdfdf947e22cfaab} 
+\index{Dead\+And\+Restart@{Dead\+And\+Restart}!Start@{Start}}
+\index{Start@{Start}!Dead\+And\+Restart@{Dead\+And\+Restart}}
+\subsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Dead\+And\+Restart.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+method ini akan menyimpan letak awal platform dan player; 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Irvan/\+Documents/\+Git\+Hub/\+Tugas\+Akhir\+A\+D\+B\+O/game fix/\+Endless\+Runner/\+Assets/\+Script/Dead\+And\+Restart.\+cs\end{DoxyCompactItemize}

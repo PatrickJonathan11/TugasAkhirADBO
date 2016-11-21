@@ -1,0 +1,26 @@
+var class_player_controller =
+[
+    [ "jump", "class_player_controller.html#a413e8e34033169093b21b38bf6bd0b34", null ],
+    [ "jumpHold", "class_player_controller.html#afd5b28f0a9018e11fc879c93107c7a37", null ],
+    [ "jumpRelease", "class_player_controller.html#af65ea7266683911055939bfad8c4248b", null ],
+    [ "setToStart", "class_player_controller.html#adb52e7f8ab39c74e1922393d5015a70a", null ],
+    [ "speed", "class_player_controller.html#accbeb6b75b9f6067679b960a91581de6", null ],
+    [ "Start", "class_player_controller.html#ae1117d9c4da3193181cddad2c814e467", null ],
+    [ "Update", "class_player_controller.html#ae8bc83dffb99867a04be016473ed2c43", null ],
+    [ "boxCol", "class_player_controller.html#a51abe7ff34134e22526284c8492ac2af", null ],
+    [ "grounded", "class_player_controller.html#a1810294c934464cd555eec1107d2379b", null ],
+    [ "jarakTempuh", "class_player_controller.html#a23820dab3461bec7fe783e801c27c8ff", null ],
+    [ "jumpForce", "class_player_controller.html#a7c109871eba0057fd2aa1856522a346d", null ],
+    [ "jumpHoldTime", "class_player_controller.html#a365831d3d6fc1d27a30086ad467305a1", null ],
+    [ "jumpHoldTimeCounter", "class_player_controller.html#a964dd786d816edf28dfb22e076e7fb6e", null ],
+    [ "jumpSound", "class_player_controller.html#ab1e1eba1b79ab5d5771099e67b0057fb", null ],
+    [ "moveSpeed", "class_player_controller.html#abb12e85ca1b12efdbc8684bff2e19c4c", null ],
+    [ "myAnimator", "class_player_controller.html#a34fe46e66072a17354236ce4c9909767", null ],
+    [ "myCollider", "class_player_controller.html#a0e793baf5b00ac0d6bcf367060db5f55", null ],
+    [ "myRigidBody", "class_player_controller.html#ae7c227462646c52ac0b35517303ea57d", null ],
+    [ "nambahJarak", "class_player_controller.html#a1b529005d052b11fe8843e3fa6de3a2a", null ],
+    [ "slide", "class_player_controller.html#a63d4bd8d38ba41b7aa45833104c11813", null ],
+    [ "speedMultiplier", "class_player_controller.html#a15aeb9e2671ba8dc7124be81397f84be", null ],
+    [ "ukuranAwal", "class_player_controller.html#abe1551a2d9b41ba6c7ce2895867eea18", null ],
+    [ "whatIsGround", "class_player_controller.html#a5280def315a8ef1d16620890a1523273", null ]
+];
